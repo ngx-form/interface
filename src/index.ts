@@ -1,4 +1,4 @@
-import { 
+import {
   DestroyInterface,
   FormComponentInterface,
   FormElementConfigInterface,
@@ -6,7 +6,6 @@ import {
   FormElementInputInterface,
   FormSelectInterface
  } from './ngx-form-interface';
-
 
 export {
   DestroyInterface,
