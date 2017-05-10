@@ -2,6 +2,7 @@
 // internal
 import { autocomplete, autofocus, disabled, element, input, readonly, required } from '@ngx-form/type';
 import { component } from '@ngx-core/common';
+import { HtmlAttributesInterface } from './html-attributes.interface';
 
 export interface FormComponentInterface {
   type: element;
@@ -18,19 +19,12 @@ export interface FormElementConfigInterface {
   types: Array<FormComponentInterface>;
 }
 
-export interface FormElementDataInterface {
-  autocomplete?: autocomplete;
-  autofocus?: autofocus;
+export interface FormElementDataInterface extends HtmlAttributesInterface {
   destroy?: DestroyInterface;
-  disabled?: disabled;
   element: element;
   key: string;
   model: any;
   options?: Array<any>;
-  pattern?: string;
-  placeholder?: string;
-  readonly?: readonly;
-  type?: input;
   viewValue?: Array<any>;
 }
 
@@ -60,3 +54,4 @@ export interface FormSelectInterface {
   required?: boolean;
   viewValue?: Array<any>;
 }
+
