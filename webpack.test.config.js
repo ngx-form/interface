@@ -16,7 +16,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    library: 'nvd3-chart',
+    library: '@ngx-form/interface',
     libraryTarget: 'umd',
     filename: '[name].js'
   },
@@ -35,7 +35,7 @@ module.exports = {
   plugins: [
     new webpack.ContextReplacementPlugin(
       // The (\\|\/) piece accounts for path separators in *nix and Windows
-      /angular(\\|\/)core(\\|\/)src(\\|\/)linker/,
+      /angular(\\|\/)core(\\|\/)@angular/,
       path.resolve(__dirname, 'src'),
       {
         // your Angular Async Route paths relative to this root directory
