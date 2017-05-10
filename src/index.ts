@@ -5,7 +5,9 @@ import {
   FormElementDataInterface,
   FormElementInputInterface,
   FormSelectInterface
- } from './ngx-form-interface';
+} from './ngx-form-interface';
+
+import { HtmlAttributesInterface } from './html-attributes.interface';
 
 export {
   DestroyInterface,
@@ -13,5 +15,6 @@ export {
   FormElementConfigInterface,
   FormElementDataInterface,
   FormElementInputInterface,
-  FormSelectInterface
+  FormSelectInterface,
+  HtmlAttributesInterface
 }
