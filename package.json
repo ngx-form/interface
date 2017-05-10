@@ -23,7 +23,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@ngx-core/common": "^0.1.1",
+    "@ngx-core/common": "^1.0.0",
     "@ngx-form/type": "^0.1.1"
   },
   "devDependencies": {
