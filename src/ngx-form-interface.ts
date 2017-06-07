@@ -2,7 +2,7 @@
 // internal
 import { autocomplete, autofocus, disabled, element, input, readonly, required } from '@ngx-form/type';
 import { component } from '@ngx-core/common';
-import { HtmlAttributesInterface } from './ngx-form-interface.htmlattributes';
+// import { HtmlAttributesInterface } from './ngx-form-interface.htmlattributes';
 
 /*
 export interface FormElementInputInterface {
