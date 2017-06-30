@@ -1,4 +1,6 @@
 
+import { HtmlAttributesInterface } from './ngx-form-interface.htmlattributes';
+
 // MdInputContainer
 export interface MdInputContainerInterface {
   color?: string;
@@ -7,7 +9,8 @@ export interface MdInputContainerInterface {
   hideRequiredMarker?: boolean;
 }
 
-export interface MdInputAttributesInterface extends MdInputContainerInterface {
+export interface MdInputAttributesInterface extends MdInputContainerInterface, HtmlAttributesInterface {
+  test: string;
   mdAutosizeMaxRows?: number;
   mdAutosizeMinRows?: number;
   mdHint?: string;
