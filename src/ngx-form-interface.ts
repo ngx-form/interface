@@ -1,34 +1,28 @@
+import { element } from '@ngx-form/type';
+import { HtmlAttributesInterface } from './ngx-form-interface.htmlattributes';
 
-// internal
-import { autocomplete, autofocus, disabled, element, input, readonly, required } from '@ngx-form/type';
-import { component } from '@ngx-core/common';
-// import { HtmlAttributesInterface } from './ngx-form-interface.htmlattributes';
-
-/*
-export interface FormElementInputInterface {
-  autocomplete?: autocomplete;
-  destroy?: DestroyInterface;
-  disabled?: boolean;
-  hint: any;
-  key: string;
-  max?: number;
-  min?: number;
-  maxlength?: number;
-  minlength?: number;
-  model: any;
-  placeholder?: string;
-  required?: required;
-  type: input;
-  viewValue?: Array<any>;
+/**
+ * Destroy property `__component` instance on
+ * @export
+ * @interface DestroyInterface
+ */
+export interface DestroyInterface {
+  onCancelled: boolean;
+  onChanged: boolean;
+  onSubmitted: boolean;
 }
 
-export interface FormSelectInterface {
+/**
+ * @export
+ * @interface FormElementInterface
+ */
+export interface FormElementInterface {
+  attributes: HtmlAttributesInterface;
   destroy?: DestroyInterface;
-  disabled?: boolean;
+  element: element;
+  focus?: boolean;
   key: string;
   model: any;
-  placeholder?: string;
-  required?: boolean;
+  options?: Array<any>;
   viewValue?: Array<any>;
 }
-*/
