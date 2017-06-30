@@ -1,5 +1,6 @@
 import { element } from '@ngx-form/type';
 import { HtmlAttributesInterface } from './ngx-form-interface.htmlattributes';
+import { MdInputAttributesInterface } from './ngx-form-interface.mdinput';
 
 /**
  * Destroy property `__component` instance on
@@ -17,7 +18,7 @@ export interface DestroyInterface {
  * @interface FormElementInterface
  */
 export interface FormElementInterface {
-  attributes: HtmlAttributesInterface;
+  attributes: MdInputAttributesInterface;
   destroy?: DestroyInterface;
   element: element;
   focus?: boolean;
