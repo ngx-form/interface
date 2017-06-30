@@ -59,5 +59,5 @@ export interface HtmlAttributesInterface {
   title?: title; // core
   type?: input;
 
-  value: value;
+  value?: value;
 }
