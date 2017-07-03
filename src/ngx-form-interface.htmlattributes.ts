@@ -52,6 +52,7 @@ export interface HtmlAttributesInterface {
   required?: required;
 
   spellcheck?: spellcheck; // core
+  step?: number;
   style?: style; // core
 
   tabindex?: tabindex; // core
