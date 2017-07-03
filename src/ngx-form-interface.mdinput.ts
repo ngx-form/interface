@@ -1,4 +1,5 @@
 
+import { mdHint } from '@ngx-form/type';
 import { HtmlAttributesInterface } from './ngx-form-interface.htmlattributes';
 
 // MdInputContainer
@@ -12,7 +13,7 @@ export interface MdInputContainerInterface {
 export interface MdInputAttributesInterface extends MdInputContainerInterface, HtmlAttributesInterface {
   mdAutosizeMaxRows?: number;
   mdAutosizeMinRows?: number;
-  mdHint?: string;
+  mdHint?: mdHint;
   mdPlaceholder?: string;
   mdPrefix?: string;
   mdSuffix?: string;
