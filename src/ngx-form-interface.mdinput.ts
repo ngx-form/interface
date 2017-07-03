@@ -10,7 +10,6 @@ export interface MdInputContainerInterface {
 }
 
 export interface MdInputAttributesInterface extends MdInputContainerInterface, HtmlAttributesInterface {
-  test: string;
   mdAutosizeMaxRows?: number;
   mdAutosizeMinRows?: number;
   mdHint?: string;
