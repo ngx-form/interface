@@ -26,5 +26,5 @@ export interface ConfigElementsInterface {
  */
 export interface FormElementConfigInterface {
   elements: ConfigElementsInterface;
-  validationMessages?: any;
+  errorMessages?: any;
 }
