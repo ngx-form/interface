@@ -12,11 +12,19 @@ export interface ConfigElementInterface {
 }
 
 /**
+ * @export
+ * @interface ConfigElementsInterface
+ */
+export interface ConfigElementsInterface {
+  [index: number]: ConfigElementInterface;
+}
+
+/**
  * Interface for FormElementModule forRoot parameter config
  * @export
  * @interface FormElementConfigInterface
  */
 export interface FormElementConfigInterface {
-  elements: Array<ConfigElementInterface>;
+  elements: ConfigElementsInterface;
   validationMessages?: any;
 }
