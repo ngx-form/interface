@@ -23,7 +23,10 @@ export interface FormElementInterface {
   element: element;
   focus?: boolean;
   key: string;
-  model: any;
   options?: Array<any>;
   viewValue?: Array<any>;
+}
+
+export interface ArrayFormElementInterface {
+  [index: number]: FormElementInterface;
 }
