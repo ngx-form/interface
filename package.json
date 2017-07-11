@@ -14,7 +14,7 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "bundle": "rollup -c rollup.config.js",
-    "prebuild": "npm run clean",
+    "prebuild": "",
     "build": "./node_modules/.bin/ngc -p tsconfig.json",
     "postbuild": "npm run bundle",
     "prepublish": "npm run build",
@@ -23,7 +23,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@ngx-core/common": "^1.0.1",
+    "@ngx-core/common": "^1.1.1",
     "@ngx-form/type": "^0.1.6"
   },
   "devDependencies": {
@@ -35,9 +35,9 @@
     "@angular/platform-browser-dynamic": "^4.2.5",
     "@types/jasmine": "^2.5.53",
     "@types/karma": "^0.13.36",
-    "@types/node": "^8.0.7",
+    "@types/node": "^8.0.8",
     "awesome-typescript-loader": "^3.2.1",
-    "codelyzer": "^3.1.1",
+    "codelyzer": "^3.1.2",
     "core-js": "^2.4.1",
     "jasmine": "^2.6.0",
     "jasmine-core": "^2.6.4",
@@ -55,8 +55,8 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-typescript": "^0.8.1",
     "rollup-plugin-uglify": "^2.0.1",
-    "rxjs": "^5.4.1",
-    "tslint": "^5.4.3",
+    "rxjs": "^5.4.2",
+    "tslint": "^5.5.0",
     "typescript": "^2.4.1",
     "zone.js": "^0.8.12"
   },
