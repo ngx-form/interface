@@ -1,16 +1,11 @@
 {
-  "angularCompilerOptions": {
-    "genDir": "./aot",
-    "strictMetadataEmit": true,
-    "skipTemplateCodegen": true,
-    "skipMetadataEmit" : false
-  },
-  "compileOnSave": false,
+  "compileOnSave": true,
   "compilerOptions": {
+    "allowJs": false,
     "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "module": "es2015",
+    "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "outDir": "dist",
@@ -19,17 +14,15 @@
     "sourceMap": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es5",
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
     "lib": [
       "es6", 
       "dom"
     ]
   },
+  "include": [
+    "./src"
+  ],
   "files": [
-    "typings.d.ts",
-    "src/index.ts"
+    "./typings.d.ts"
   ]
 }
