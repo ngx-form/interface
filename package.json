@@ -41,8 +41,9 @@
     "typescript": "^2.4.1"
   },
   "keywords": [
-    "Angular",
-    "Common"
+    "@ngx-form",
+    "@ngx-form/interface",
+    "interface"
   ],
   "repository": {
     "type": "git",
