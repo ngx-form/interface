@@ -41,5 +41,4 @@ Thumbs.db
 .vscode
 build
 dist
-/typings.d.ts
 /index.d.ts
