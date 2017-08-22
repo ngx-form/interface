@@ -22,6 +22,7 @@
     "build:dts-gen": "./node_modules/dts-gen/bin/",
     "postbuild": "",
     "prepublish": "",
+    "build": "npm run build:dts-generator",
     "start": "npm run build",
     "start:clean": "npm run clean && npm run build"
   },
